@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html>
+<!--Esta parte es todo el encabezado de la pagina-->
+<head>
+	<meta charset="utf-8">
+	<title>PURE NATURAL</title>
+
+	<div class="fondo-especifico">
+	<h1>PURE NATURAL
+	<link rel="stylesheet"  href="INTEGRADORA.css">
+	
+	<div class="div-menu">
+	  <nav>
+    <ul>
+      <li><a href="#">Inicio</a></li>
+      <li><a href="#">Acerca de</a></li>
+      <li><a href="#">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <script>
+    const menuToggle = document.getElementById("toggle-menu");
+    const menuList = document.querySelector("nav ul");
+
+    menuToggle.addEventListener("click", () => {
+      menuList.classList.toggle("show");
+    });
+  </script>
+</div>
+	</h1>
+</div>
+</head>
+
+<!--esta parte es todo el cuerpo de la pagina-->
+<div class="fondo-body">
+<body>
+  <div class="producto">
+
+    <!-- Contenido del producto -->
+    <h2>Generador Hidroelectrico</h2>
+    <img src="integradora.JPG">
+    <p>Descripción del producto y otras informaciones.</p>
+    <a href="#" class="mostrar-especificaciones">Ver especificaciones</a>
+  </div>
+
+  <div class="especificaciones">
+
+    <!-- Contenido de las especificaciones -->
+    <h2>Especificaciones del Generador hidroelectrico</h2>
+    <ul>
+    	<li>Precio
+    		<h4 class="precio">$8,900</h4>
+    	</li>
+      <li>Dimensiones
+      	<h4> este producto cuenta con unas dimensiones de 100cm x 250cm </h4>
+      	   </li>
+      <li>Especificación 2</li>
+      <li>Especificación 3</li>
+    </ul>
+        <!-- Botón de pagar -->
+    <a href="#pago" class="boton-pagar">Pagar Ahora</a>
+  </div>
+
+
+  <div id="pago">
+        <!-- Contenido del apartado de pago -->
+    <h2>Datos para procesar su pedido</h2>
+    <form>
+    	    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="direccion">direccion:</label>
+    <input type="direccion" id="direccion" name="direccion" required>
+
+    <label for="tarjeta de credito/debito">Tarjeta:</label>
+    <input type="tarjeta" id="tarjeta" name="tarjeta" required >
+
+    <label for="CVV">CVV:</label>
+     <input type="CVV" id="CVV" name="CVV" required >
+
+    <input type="submit" value="Enviar">
+    </form>
+  </div>
+
+
+  <script src="integradora.js"></script>
+</body>
+</div>
+</html>
